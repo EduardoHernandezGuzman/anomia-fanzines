@@ -2,10 +2,6 @@
 
 Bienvenido a **Anomia Fanzines**, un sitio web dedicado a la exploración de ideas críticas y liberadas a través de fanzines innovadores.
 
-## Enlace del Proyecto
-
-Puedes ver la web en línea en el siguiente enlace: [Anomia Fanzines](https://tu-enlace-aqui.com)
-
 ## Descripción del Proyecto
 
 Anomia Fanzines es un espacio donde la creatividad se manifiesta en forma de fanzines, ofreciendo contenido provocador y reflexivo. Las secciones principales incluyen:
