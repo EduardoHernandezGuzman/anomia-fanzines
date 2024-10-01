@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "./Navbar";
-import Logo from "../img/icon.png";
+import Logo from "/public/img/icon.png";
 
 export const Header = () => {
   const [isActive, setIsActive] = useState(false);
