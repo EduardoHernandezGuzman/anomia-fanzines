@@ -2,7 +2,7 @@ const listadoAnomia = [
     {
       id: 1,
       titulo: "Iconostasis 1",
-      imagen: "../src/img/portadas/001.jpg",
+      imagen: "/src/img/portadas/001.jpg",
       enlace:
         "https://www.etsy.com/es/listing/1329795974/zine-iconostasis-n1-noviembre-2022",
       categoria: "Iconostasis",
