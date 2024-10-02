@@ -8,7 +8,9 @@ export const Hero = () => {
           <div className="font-semibold flex items-center uppercase mb-4 text-black">
             <div className="w-16 h-[5px] bg-orange-500 mr-4"></div>Anomia Fanzines
           </div>
-          <h1 className="w-full text-[70px] leading-[1.1] font-light mb-4 uppercase text-black">
+
+
+          <h1 className=" leading-[1.1] font-light mb-4 uppercase text-black lg:text-[70px] md:text-[60px] sm:text-[50px] sm:leading-tight">
             La Caída de los Viejos Paradigmas:
             <br />
             <span className="font-semibold relative inline-block text-black">
@@ -16,13 +18,14 @@ export const Hero = () => {
               <div className="absolute bottom-[-10px] left-0 w-full h-[5px] bg-orange-500"></div>
             </span>
           </h1>
+
           <Link
             to={"/products"}
             className="self-end uppercase font-semibold border-b-2 border-primary text-black hover:bg-orange-500 hover:text-white mt-12"
           >
             Sumérgete en el Caos
           </Link>
-        </div>  
+        </div>
       </div>
     </section>
   );
