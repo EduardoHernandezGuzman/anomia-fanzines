@@ -51,7 +51,7 @@ export const Contact = () => {
   return (
     <div className="container px-4 mx-auto mt-40 mb-60 flex justify-center items-center">
       <div className="max-w-md px-8 py-6 bg-gray-100 rounded-lg">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contáctanos</h2>
         <form onSubmit={handleSubmit}>
           {errorInput && (
             <div className="bg-red-500 text-white font-medium text-center py-2 rounded mb-5">
