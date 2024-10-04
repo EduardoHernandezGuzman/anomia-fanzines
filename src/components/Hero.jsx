@@ -10,7 +10,7 @@ export const Hero = () => {
           </div>
 
 
-          <h1 className=" leading-[1.1] font-light mb-4 uppercase text-black lg:text-[70px] md:text-[60px] sm:text-[50px] sm:leading-tight">
+          <h1 className=" leading-[1.1] font-light mb-4 uppercase text-black lg:text-[70px] md:text-[65px] sm:text-[55px] sm:leading-tight">
             La Caída de los Viejos Paradigmas:
             <br />
             <span className="font-semibold relative inline-block text-black">
