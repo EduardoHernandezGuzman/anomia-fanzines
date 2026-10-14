@@ -12,6 +12,6 @@ export const sendContactEmail = ({ name, email, message }) => {
       message,
       reply_to: email,
     },
-    { publicKey }
+    { publicKey },
   );
 };

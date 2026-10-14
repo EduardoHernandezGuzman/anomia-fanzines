@@ -9,7 +9,6 @@ export const Hero = () => {
             <div className="w-16 h-[5px] bg-orange-500 mr-4"></div>Anomia Fanzines
           </div>
 
-
           <h1 className=" leading-[1.1] font-light mb-4 uppercase text-black lg:text-[70px] md:text-[65px] sm:text-[55px] sm:leading-tight">
             La Caída de los Viejos Paradigmas:
             <br />

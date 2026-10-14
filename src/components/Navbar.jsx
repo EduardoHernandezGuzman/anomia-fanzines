@@ -7,17 +7,13 @@ export const Navbar = () => {
   return (
     <nav className="flex items-center gap-3 font-medium text-primary">
       <Link
-        className={`${
-          pathname === "/" && "text-orange-500"
-        } hover:text-orange-500 transition`}
+        className={`${pathname === "/" && "text-orange-500"} hover:text-orange-500 transition`}
         to={"/"}
       >
         Inicio
       </Link>
       <Link
-        className={`${
-          pathname === "/about" && "text-orange-500"
-        } hover:text-orange-500 transition`}
+        className={`${pathname === "/about" && "text-orange-500"} hover:text-orange-500 transition`}
         to={"/about"}
       >
         Editorial

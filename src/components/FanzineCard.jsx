@@ -1,9 +1,9 @@
-const FanzineCard = ({ titulo, fecha, imagen, enlace }) => {
+export const FanzineCard = ({ titulo, fecha, imagen, enlace }) => {
   return (
     <div className="border border-gray-300 p-4 text-center rounded-lg bg-white transition-transform transform hover:-translate-y-2 hover:shadow-xl max-w-[250px] mx-auto hover:border-orange-500">
-      <img 
-        src={imagen} 
-        alt={titulo} 
+      <img
+        src={imagen}
+        alt={titulo}
         className="w-full h-auto max-w-[200px] object-cover rounded-md transition-transform duration-300 hover:scale-105"
       />
 
@@ -22,5 +22,3 @@ const FanzineCard = ({ titulo, fecha, imagen, enlace }) => {
     </div>
   );
 };
-
-export default FanzineCard;

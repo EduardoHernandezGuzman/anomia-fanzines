@@ -13,7 +13,7 @@ export const isEmailjsConfigured = missingEmailjsVars.length === 0;
 export const getEmailjsConfig = () => {
   if (!isEmailjsConfigured) {
     throw new Error(
-      `Faltan variables de entorno de EmailJS: ${missingEmailjsVars.join(", ")}. Revisa .env.example y la configuración del entorno.`
+      `Faltan variables de entorno de EmailJS: ${missingEmailjsVars.join(", ")}. Revisa .env.example y la configuración del entorno.`,
     );
   }
 

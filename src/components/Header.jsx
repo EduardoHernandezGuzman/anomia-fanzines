@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "./Navbar";
-import Logo from "/public/img/icon.png";
 
 export const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -25,7 +24,7 @@ export const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-full">
         <Link to={"/"}>
           <div className="flex items-center gap-4">
-            <img className="w-[40px]" src={Logo} alt="Logo" />
+            <img className="w-[40px]" src="/img/icon.png" alt="Logo" />
             <h2 className="uppercase text-xl font-bold">anomia fanzines</h2>
           </div>
         </Link>

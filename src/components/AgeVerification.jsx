@@ -1,13 +1,13 @@
-const AgeVerification = ({ onConfirm }) => {
+export const AgeVerification = ({ onConfirm }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50">
       <div className="bg-white p-8 rounded-lg text-center shadow-lg max-w-sm">
         <h2 className="text-2xl font-semibold mb-4">Confirmación de Edad</h2>
-        
+
         <p className="text-gray-700 mb-6">
           Debes ser mayor de edad para ver este contenido. ¿Eres mayor de 18 años?
         </p>
-        
+
         <div className="flex justify-center gap-4">
           <button
             onClick={() => onConfirm(true)}
@@ -26,5 +26,3 @@ const AgeVerification = ({ onConfirm }) => {
     </div>
   );
 };
-
-export default AgeVerification;

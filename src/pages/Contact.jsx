@@ -17,7 +17,7 @@ const INITIAL_FORM = {
   website: "",
 };
 
-export const Contact = () => {
+const Contact = () => {
   const [form, setForm] = useState(INITIAL_FORM);
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState(false);
@@ -96,7 +96,7 @@ export const Contact = () => {
       setErrorMessage(
         isEmailjsConfigured
           ? "No se pudo enviar el mensaje. Inténtalo de nuevo."
-          : "El formulario de contacto no está configurado. Inténtalo más tarde."
+          : "El formulario de contacto no está configurado. Inténtalo más tarde.",
       );
     } finally {
       setIsSending(false);
@@ -137,7 +137,9 @@ export const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-800 mb-1" htmlFor="name">Tu nombre</label>
+            <label className="block text-gray-800 mb-1" htmlFor="name">
+              Tu nombre
+            </label>
             <input
               id="name"
               name="name"
@@ -151,7 +153,9 @@ export const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-800 mb-1" htmlFor="email">Tu email</label>
+            <label className="block text-gray-800 mb-1" htmlFor="email">
+              Tu email
+            </label>
             <input
               id="email"
               name="email"
@@ -165,7 +169,9 @@ export const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-800 mb-1" htmlFor="message">Tu mensaje</label>
+            <label className="block text-gray-800 mb-1" htmlFor="message">
+              Tu mensaje
+            </label>
             <textarea
               id="message"
               name="message"
@@ -189,3 +195,5 @@ export const Contact = () => {
     </div>
   );
 };
+
+export default Contact;
