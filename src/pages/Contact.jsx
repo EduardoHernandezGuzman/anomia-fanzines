@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { isEmailjsConfigured } from "../lib/env";
 import { sendContactEmail } from "../services/email";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -92,7 +93,11 @@ export const Contact = () => {
       setSuccessMessage(true);
       setForm(INITIAL_FORM);
     } catch {
-      setErrorMessage("No se pudo enviar el mensaje. Inténtalo de nuevo.");
+      setErrorMessage(
+        isEmailjsConfigured
+          ? "No se pudo enviar el mensaje. Inténtalo de nuevo."
+          : "El formulario de contacto no está configurado. Inténtalo más tarde."
+      );
     } finally {
       setIsSending(false);
     }
