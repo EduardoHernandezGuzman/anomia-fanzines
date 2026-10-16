@@ -184,7 +184,7 @@ const Contact = () => {
             ></textarea>
           </div>
           <button
-            className="w-full font-semibold bg-orange-500 text-black py-2 px-4 rounded-lg hover:bg-orange-600 hover:text-white transition duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+            className="w-full font-semibold bg-orange-500 text-black py-2 px-4 rounded-lg cursor-pointer hover:bg-orange-600 hover:text-white transition duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
             type="submit"
             disabled={isSending}
           >

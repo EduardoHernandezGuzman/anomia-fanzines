@@ -12,7 +12,7 @@ const Error = () => {
       </p>
       <Link
         to="/"
-        className="px-6 py-3 bg-orange-500 text-white font-semibold rounded-full transition-colors duration-300 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-opacity-50"
+        className="px-6 py-3 bg-orange-500 text-white font-semibold rounded-full transition-colors duration-300 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-600/50"
       >
         Regresar al Inicio
       </Link>

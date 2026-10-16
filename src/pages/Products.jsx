@@ -54,7 +54,7 @@ const Products = () => {
               key={page}
               type="button"
               aria-current={currentPage === page ? "page" : undefined}
-              className={`mx-1 px-3 py-2 cursor-pointer border border-gray-300 rounded transition-colors duration-300 
+              className={`mx-1 px-3 py-2 cursor-pointer border border-gray-300 rounded-sm transition-colors duration-300 
                 ${currentPage === page ? "text-orange-500" : "text-black hover:text-orange-500"}`}
               onClick={() => setCurrentPage(page)}
             >

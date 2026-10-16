@@ -1,6 +1,6 @@
 export const FanzineCard = ({ titulo, fecha, imagen, enlace }) => {
   return (
-    <div className="border border-gray-300 p-4 text-center rounded-lg bg-white transition-transform transform hover:-translate-y-2 hover:shadow-xl max-w-[250px] mx-auto hover:border-orange-500">
+    <div className="border border-gray-300 p-4 text-center rounded-lg bg-white transition-transform hover:-translate-y-2 hover:shadow-xl max-w-[250px] mx-auto hover:border-orange-500">
       <img
         src={imagen}
         alt={titulo}
