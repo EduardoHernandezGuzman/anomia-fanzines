@@ -22,6 +22,8 @@ jobs:
         run: npm run lint
       - name: Comprobar formato
         run: npm run format:check
+      - name: Tests
+        run: npm test
       - name: Auditar dependencias de produccion
         run: npm audit --omit=dev --audit-level=high
       - name: Build
