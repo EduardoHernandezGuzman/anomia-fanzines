@@ -4,6 +4,10 @@ export const FanzineCard = ({ titulo, fecha, imagen, enlace }) => {
       <img
         src={imagen}
         alt={titulo}
+        width="400"
+        height="564"
+        loading="lazy"
+        decoding="async"
         className="w-full h-auto max-w-[200px] object-cover rounded-md transition-transform duration-300 hover:scale-105"
       />
 

@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { FANZINES, FANZINE_CATEGORIES } from "./fanzines";
 
@@ -27,5 +29,16 @@ describe("fanzines", () => {
     const ids = FANZINES.map((fanzine) => fanzine.id);
 
     expect(new Set(ids).size).toBe(ids.length);
+  });
+
+  it("apunta a imagenes WebP con su JPG original en assets/portadas", () => {
+    FANZINES.forEach((fanzine) => {
+      expect(fanzine.imagen).toMatch(/^\/img\/portadas\/[A-Za-z0-9]+\.webp$/);
+
+      const sourceName = `${path.parse(fanzine.imagen).name}.jpg`;
+      const sourcePath = path.join(process.cwd(), "assets", "portadas", sourceName);
+
+      expect(existsSync(sourcePath), `Falta ${sourceName} en assets/portadas`).toBe(true);
+    });
   });
 });

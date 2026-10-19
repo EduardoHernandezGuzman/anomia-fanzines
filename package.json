@@ -9,8 +9,12 @@
   },
   "scripts": {
     "dev": "vite",
+    "predev": "npm run optimize:images",
     "build": "vite build",
+    "prebuild": "npm run optimize:images",
     "preview": "vite preview",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "optimize:images:check": "node scripts/optimize-images.mjs --check",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -42,6 +46,7 @@
     "globals": "^17.13.0",
     "jsdom": "^29.1.1",
     "prettier": "^3.9.10",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4.3.3",
     "vite": "^8.3.4",
     "vitest": "^5.0.5"

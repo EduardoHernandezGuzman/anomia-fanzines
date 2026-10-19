@@ -48,5 +48,13 @@ export default [
       },
     },
   },
+  {
+    files: ["scripts/**/*.mjs", "src/**/*.test.{js,jsx}"],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
   prettier,
 ];

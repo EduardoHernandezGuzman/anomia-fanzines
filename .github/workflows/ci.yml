@@ -18,6 +18,8 @@ jobs:
           cache: npm
       - name: Instalar dependencias
         run: npm ci
+      - name: Comprobar imagenes optimizadas
+        run: npm run optimize:images:check
       - name: Lint
         run: npm run lint
       - name: Comprobar formato
