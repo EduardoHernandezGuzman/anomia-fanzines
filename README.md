@@ -62,7 +62,7 @@ Notas de seguridad:
    `imagen: "/img/portadas/027.webp"`.
 3. Commit y push. Al arrancar `npm run dev` o `npm run build` (y en el deploy de Vercel) se genera automáticamente el WebP optimizado.
 
-Las portadas WebP (`public/img/portadas/`) se generan en local y no se versionan. El script es incremental: solo convierte las imágenes nuevas o modificadas, elimina los WebP huérfanos y falla en CI (`optimize:images:check`) si falta alguna conversión.
+Las portadas WebP (`public/img/portadas/`) se generan en local y no se versionan. El script es incremental: solo convierte las imágenes nuevas o modificadas y elimina los WebP huérfanos. En CI y en Vercel se generan automáticamente durante el build (`prebuild`); un test falla si una entrada del catálogo no tiene su JPG de origen en `assets/portadas/`.
 
 ## Scripts
 
