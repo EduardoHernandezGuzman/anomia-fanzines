@@ -96,3 +96,9 @@ Las portadas WebP (`public/img/portadas/`) se generan en local y no se versionan
 ## Contacto
 
 - GitHub: [Eduardo Hernandez Guzmán](https://github.com/EduardoHernandezGuzman)
+
+## Licencia
+
+El **código** de este repositorio se distribuye bajo la licencia [MIT](LICENSE).
+
+Las **portadas, textos e imágenes de los fanzines** (`assets/portadas/` y `public/img/`) son propiedad de Anomia Fanzines y quedan fuera de la licencia MIT: no se permite su reproducción ni reutilización sin autorización expresa.
