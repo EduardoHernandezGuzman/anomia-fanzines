@@ -18,7 +18,7 @@ const Products = () => {
   }
 
   return (
-    <div className="p-5 mt-24 flex flex-col items-center">
+    <div className="container mx-auto py-5 mt-24 flex flex-col items-center">
       <div className="flex justify-center mb-16">
         {categories.map((category) => (
           <button
